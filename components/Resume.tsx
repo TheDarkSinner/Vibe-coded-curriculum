@@ -7,13 +7,12 @@ interface ResumeProps {
 
 const Resume = forwardRef<HTMLDivElement, ResumeProps>(({ data }, ref) => {
   return (
-    <div 
+    <div
       ref={ref}
       className="w-[210mm] min-h-[297mm] bg-white flex shadow-2xl mx-auto print:shadow-none print:w-full print:min-h-screen print:mx-0 text-sm leading-relaxed"
     >
       {/* Left Sidebar */}
       <div className="w-[32%] bg-[#1f2f3d] text-gray-300 p-8 flex flex-col gap-8 print:bg-[#1f2f3d] print-color-adjust-exact">
-        
         {/* Contact Section */}
         <section>
           <h2 className="text-white text-lg font-semibold mb-4 border-b border-gray-500 pb-1">
@@ -21,17 +20,15 @@ const Resume = forwardRef<HTMLDivElement, ResumeProps>(({ data }, ref) => {
           </h2>
           <div className="flex flex-col gap-3 text-sm">
             <div>
-              <p className="font-semibold text-white">Phone</p>
-              <p>{data.contact.phone}</p>
-            </div>
-            <div>
               <p className="font-semibold text-white">Email</p>
-              <a href={`mailto:${data.contact.email}`} className="hover:text-white transition-colors">{data.contact.email}</a>
+              <a href={`mailto:${data.contact.email}`} className="hover:text-white transition-colors">
+                {data.contact.email}
+              </a>
             </div>
             <div>
               <p className="font-semibold text-white">LinkedIn</p>
               <a href={`https://${data.contact.linkedin}`} target="_blank" rel="noreferrer" className="hover:text-white transition-colors break-words block">
-                 linkedin.com/in/mm-oliv
+                {data.contact.linkedin}
               </a>
             </div>
             <div>
@@ -82,12 +79,10 @@ const Resume = forwardRef<HTMLDivElement, ResumeProps>(({ data }, ref) => {
             ))}
           </ul>
         </section>
-
       </div>
 
       {/* Right Content */}
       <div className="w-[68%] p-10 flex flex-col text-gray-800">
-        
         {/* Header */}
         <header className="mb-8">
           <h1 className="text-4xl font-bold text-[#1f2f3d] mb-2">{data.name}</h1>
@@ -104,7 +99,7 @@ const Resume = forwardRef<HTMLDivElement, ResumeProps>(({ data }, ref) => {
             {data.summary}
           </p>
         </section>
-        
+
         <hr className="w-16 border-gray-400 mb-8" />
 
         {/* Experience */}
@@ -117,13 +112,13 @@ const Resume = forwardRef<HTMLDivElement, ResumeProps>(({ data }, ref) => {
                 {exp.durationTotal && (
                   <p className="text-sm text-gray-500 mb-1">{exp.durationTotal}</p>
                 )}
-                
+
                 <h4 className="font-semibold text-gray-700">{exp.role}</h4>
                 <p className="text-sm text-gray-500 italic mb-1">
                   {exp.duration}
                   {exp.location && ` | ${exp.location}`}
                 </p>
-                
+
                 {exp.description && (
                   <p className="text-sm text-gray-700 mt-2 text-justify">
                     {exp.description}
@@ -144,7 +139,7 @@ const Resume = forwardRef<HTMLDivElement, ResumeProps>(({ data }, ref) => {
               <div key={index}>
                 <h3 className="text-lg font-bold text-gray-800">{edu.institution}</h3>
                 <p className="text-gray-700">
-                  {edu.degree} <span className="text-gray-400">· ({edu.duration})</span>
+                  {edu.degree} <span className="text-gray-400">&middot; ({edu.duration})</span>
                 </p>
               </div>
             ))}

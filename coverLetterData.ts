@@ -3,7 +3,6 @@ export interface CoverLetterData {
     title: string;
     contact: {
         email: string;
-        phone?: string;
         linkedin: string;
         github: string;
         location: string;
@@ -19,12 +18,12 @@ export interface CoverLetterData {
 
 export const coverLetterData: CoverLetterData = {
     name: "Matheus Mendonça",
-    title: "Full Stack Developer",
+    title: "Full Stack Developer | Building Software & Blockchain Solutions",
     contact: {
         email: "gs.math.mm@gmail.com",
-        linkedin: "linkedin.com/in/mm-oliv",
+        linkedin: "www.linkedin.com/in/mm-oliv",
         github: "github.com/TheDarkSinner",
-        location: "Belo Horizonte, Brazil"
+        location: "Belo Horizonte, Minas Gerais, Brazil"
     },
     date: new Date().toLocaleDateString('en-US', {
         year: 'numeric',
@@ -32,13 +31,13 @@ export const coverLetterData: CoverLetterData = {
         day: 'numeric'
     }),
     paragraphs: [
-        "Full Stack developer with a strong focus on building high-impact, scalable web applications and integrating AI to accelerate digital transformation. I am proficient in React, TypeScript, Node.js, and Express, consistently prioritizing clean architecture, maintainability, and efficient development practices.",
-        "I have contributed to the end-to-end development of global applications delivered in more than 15 languages, collaborating across multidisciplinary teams to ensure high technical and product quality. My experience also includes designing and implementing robust and secure smart contracts in Solidity for EVM-compatible blockchains, with a strong emphasis on safety, optimization, and real-world utility.",
-        "I actively leverage AI tools to enhance both development workflows and user-facing features, driving faster iteration cycles and measurable product improvements. I am also an enthusiast of Blockchain technologies and Low-Code platforms such as OutSystems, always exploring innovative ways to deliver smarter, faster, and more resilient solutions."
+        "Full Stack Software Engineer with experience in fintech, banking integrations, blockchain solutions, and enterprise web applications. I bring a strong background in Node.js, NestJS, TypeScript, React, and Next.js, with a focus on scalable APIs, internal platforms, and end-to-end digital products.",
+        "I currently work as a Mid-Level Backend Software Engineer in a startup environment, building integrations that support financial operations, secure data exchange, and interoperability between banking and blockchain systems. Before that, I contributed to enterprise applications with multilingual reach across 19 languages, supporting global teams and business operations.",
+        "My experience also includes cloud deployment, application maintenance, and low-code development with OutSystems. I am especially interested in backend architecture, product development, automation, fintech infrastructure, blockchain, and scalable software systems."
     ],
     personalProject: {
         name: "DealerNode",
         url: "https://dealernode.app",
-        description: "In addition to my professional experience, I maintain a personal project where I lead the architecture and development of an AI-powered Web3 platform, further expanding my expertise in distributed systems, automation, and crypto-native development."
+        description: "In parallel with my professional work, I maintain a personal product where I deepen my experience with distributed systems, automation, and crypto-native software development."
     }
 };

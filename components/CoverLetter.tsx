@@ -13,17 +13,12 @@ const CoverLetter = forwardRef<HTMLDivElement, CoverLetterProps>(({ data }, ref)
         >
             {/* Left Sidebar - matching Resume style */}
             <div className="w-[32%] bg-[#1f2f3d] text-gray-300 p-8 flex flex-col gap-8 print:bg-[#1f2f3d] print-color-adjust-exact">
-
                 {/* Contact Section */}
                 <section>
                     <h2 className="text-white text-lg font-semibold mb-4 border-b border-gray-500 pb-1">
                         Contact
                     </h2>
                     <div className="flex flex-col gap-3 text-sm">
-                        <div>
-                            <p className="font-semibold text-white">Phone</p>
-                            <p>{data.contact.phone}</p>
-                        </div>
                         <div>
                             <p className="font-semibold text-white">Email</p>
                             <a href={`mailto:${data.contact.email}`} className="hover:text-white transition-colors break-words block">
@@ -55,12 +50,12 @@ const CoverLetter = forwardRef<HTMLDivElement, CoverLetterProps>(({ data }, ref)
                         Key Highlights
                     </h2>
                     <ul className="flex flex-col gap-2 text-sm">
-                        <li>• Full Stack Development</li>
-                        <li>• AI Integration</li>
-                        <li>• Blockchain / Web3</li>
-                        <li>• Smart Contracts (Solidity)</li>
-                        <li>• Global Applications (15+ languages)</li>
-                        <li>• Low-Code Platforms</li>
+                        <li>&bull; Backend Development</li>
+                        <li>&bull; Banking Integrations</li>
+                        <li>&bull; Blockchain Solutions</li>
+                        <li>&bull; Enterprise Applications</li>
+                        <li>&bull; Global Delivery (19 languages)</li>
+                        <li>&bull; Low-Code Platforms</li>
                     </ul>
                 </section>
 
@@ -81,17 +76,15 @@ const CoverLetter = forwardRef<HTMLDivElement, CoverLetterProps>(({ data }, ref)
                                 {data.personalProject.url}
                             </a>
                             <p className="mt-2 text-xs leading-relaxed">
-                                AI-powered Web3 platform for distributed systems and crypto-native development.
+                                Independent product focused on distributed systems, automation, and crypto-native development.
                             </p>
                         </div>
                     </section>
                 )}
-
             </div>
 
             {/* Right Content */}
             <div className="w-[68%] p-10 flex flex-col text-gray-800">
-
                 {/* Header */}
                 <header className="mb-6">
                     <h1 className="text-4xl font-bold text-[#1f2f3d] mb-2">{data.name}</h1>
@@ -120,7 +113,6 @@ const CoverLetter = forwardRef<HTMLDivElement, CoverLetterProps>(({ data }, ref)
                             </p>
                         ))}
 
-                        {/* Personal Project mention */}
                         {data.personalProject && (
                             <p className="text-gray-700 leading-relaxed">
                                 {data.personalProject.description}
