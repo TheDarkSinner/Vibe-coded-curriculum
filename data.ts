@@ -3,7 +3,7 @@ import { ResumeData } from './types';
 export const resumeData: ResumeData = {
   name: "Matheus Mendonça",
   title: "Full Stack Developer | Building Software & Blockchain Solutions",
-  summary: "Full Stack Software Engineer with experience in fintech, banking integrations, blockchain solutions, and enterprise web applications. Strong background in Node.js, NestJS, TypeScript, React, and Next.js, building scalable APIs, internal platforms, and end-to-end digital products. Currently working as a Mid-Level Backend Software Engineer in a startup environment, focused on delivering business value through backend integrations that support financial operations, secure data exchange, and interoperability between banking and blockchain systems. Previously worked on enterprise applications in a global environment, contributing to solutions with multilingual reach across 19 languages. Additional experience includes cloud deployment, application maintenance, and low-code development with OutSystems. Interested in backend architecture, product development, automation, fintech infrastructure, blockchain, and scalable software systems.",
+  summary: "Full Stack Developer focused on software and blockchain solutions, with experience across fintech, banking integrations, enterprise web applications, and internal platforms. Strong background in Node.js, NestJS, TypeScript, React, and Next.js, building scalable APIs and end-to-end digital products. Currently working at Global Cripto, delivering backend integrations that support financial operations, secure data exchange, and interoperability between banking and blockchain systems. Previously contributed to enterprise applications at RHI Magnesita with multilingual reach across 19 languages, cloud deployment in Azure, application maintenance, and low-code development with OutSystems. Interested in backend architecture, product development, automation, fintech infrastructure, blockchain, and scalable software systems.",
   contact: {
     email: "gs.math.mm@gmail.com",
     linkedin: "www.linkedin.com/in/mm-oliv",
@@ -34,11 +34,11 @@ export const resumeData: ResumeData = {
   experience: [
     {
       company: "Global Cripto",
-      role: "Mid-Level Backend Software Engineer",
+      role: "Full Stack Developer",
       duration: "March 2026 - Present",
-      durationTotal: "2 months",
+      durationTotal: "5 months",
       location: "",
-      description: "Working on backend development for integrations involving banking systems and blockchain solutions, supporting financial operations, system interoperability, and secure data exchange."
+      description: "Developing software and blockchain solutions with a backend focus, including integrations between banking systems and crypto infrastructure that support financial operations, system interoperability, and secure data exchange."
     },
     {
       company: "RHI Magnesita",
